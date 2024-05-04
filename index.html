@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand" href="https://www.ferrari.com/en-EN/corporate/articles/ferrari-vision-gran-turismo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlXKdyJdUce7PRhvGY8R9U0oloM7ghRSX1M5wfpFpj4Q&s"
+                alt="Ferrari Logo" width="35" height="50" class="mr-2">
+            Ferrari VisionGT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#headingOne">Powertrain</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#headingTwo">Performance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#headingThree">Weight</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#headingFour">Transmission and Gearbox</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.topgear.com/sites/default/files/2022/11/Ferrari_Vision_GT_02.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.ferrari.com/cms/network/media/img/resize/6380cf2694471c00229eb69b-ferrari_vision_gt_news-l?"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.topgear.com/sites/default/files/2022/11/Ferrari_Vision_GT_front_02.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Accordion -->
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <span style="font-weight: 700;">POWERTRAIN </span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Type V6 - 120°, twin turbo, all-wheel drive<br>
+                    Total displacement 3000 cc<br>
+                    Max. ICE power output 1030 cv @ 9000 rpm<br>
+                    Max. ICE torque 900 Nm at 5500 rpm<br>
+                    Max. power output hybrid system 240 kW (326 cv)<br>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <span style="font-weight: 700;">PERFORMANCE</span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Maximum speed > 350 km/h<br>
+                    0-100 km/h in less than 2.0 s<br>
+                    0-200 km/h in less than 5.0 s<br>
+                    Fiorano lap time in less than 1'10"<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <span style="font-weight: 700;">WEIGHT</span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    Dry weight 1250 kg<br>
+                    Weight distribution 43.5% front / 56.5% rear<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <span style="font-weight: 700;">TRANSMISSION AND GEARBOX</span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    F1 dual-clutch gearbox, eight speed.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="card-deck">
+        <div class="card bg-success">
+            <a href="https://www.ferrari.com/en-EN/auto/sf90-spider">
+                <img src="https://cdn.ferrari.com/cms/network/media/img/resize/649ec877f6396100889d6e16-ferrari-models-menu-2023-cards-sf90-spider?width=1040&height=585"
+                    class="card-img-top" alt="...">
+            </a>
+
+            <div class="card-body">
+                <h5 class="card-title">SF90 SPIDER</h5>
+                <p class="card-text">As the Prancing Horse’s first production plug-in hybrid spider, the SF90 Spider
+                    sets new performance and innovation benchmarks not only for the marque’s range, but for the entire
+                    sports car sector. The new convertible has the same extreme supercar specification and
+                    record-breaking performance as the SF90 Stradale yet also adds further driving pleasure and
+                    versatility to the mix, thanks to the latest iteration of Ferrari’s signature Retractable Hard Top
+                    architecture. This makes the SF90 Spider the ideal car for owners that demand the very pinnacle of
+                    Ferrari technology, but still want the thrill and versatility of open-top driving.</p>
+            </div>
+        </div>
+        <div class="card bg-white">
+            <a href="https://www.ferrari.com/en-EN/auto/sf90-xx-spider">
+                <img src="https://cdn.ferrari.com/cms/network/media/img/resize/64a6d22d867a7e002308a92b-ferrari-models-menu-2023-cards-sf90-xx-spider?width=1040&height=585"
+                    class="card-img-top" alt="...">
+            </a>
+
+            <div class="card-body">
+                <h5 class="card-title">SF90 XX SPIDER</h5>
+                <p class="card-text">Around 20 years ago, Ferrari began producing Special Version cars which raised the
+                    performance of some of its production models to new extremes. Many of these, including the 488 Pista
+                    Spider and 812 Competizione A, became part of the Maranello marque’s legend. Contemporaneously, the
+                    Prancing Horse also launched the XX Programme which offers a select group of expert client the
+                    opportunity to become real track test-drivers at the wheel of cars, such as the FXX-K EVO, that are
+                    not homologated for road use. Now for the first time, the programmes have been brought together in
+                    the SF90 XX Spider, the first Ferrari Special Version that draws on the programme’s concepts to make
+                    it effectively a road-legal XX. While the SF90 XX Spider retains the Retractable Hard Top (RHT) of
+                    the SF90 Spider from which it is derived, it unleashes an extra 30 CV and boasts specifically
+                    designed software logics as well as radical aero solutions, such as a fixed rear wing.</p>
+            </div>
+        </div>
+        <div class="card bg-danger">
+            <a href="https://www.ferrari.com/en-EN/auto/ferrari-daytona-sp3">
+                <img src="https://cdn.ferrari.com/cms/network/media/img/resize/649ecafd437d870023cf5351-ferrari-models-menu-2023-cards-ferrari-daytonasp3?width=1040&height=585"
+                    class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">DAYTONA SP3</h5>
+                <p class="card-text">At the 1967 24 Hours of Daytona, Ferrari took the top three places in the first
+                    round of the International World Sports Car Championship. The 330 P3/4, 330 P4 and 412 P that
+                    famously shot past the chequered flag side by side perfectly encapsulated the spirit of the sports
+                    prototypes of the 1960s, a decade now considered the golden era of closed wheel racing. The Ferrari
+                    Daytona SP3, the second car to join the limited edition Icona series, pays homage to the
+                    mid-rear-engined Ferrari V12 sports prototypes that earned the marque its unparalleled motor sport
+                    status.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="text-center">
+        <button type="button" class="btn btn-primary animated-button" id="websiteButton">Official Ferrari
+            Website</button>
+
+    </div>
+
+
+
+    <!-- Bootstrap JS and jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
