@@ -16,3 +16,4 @@ Submission Guidelines:
 Develop a set of HTML, CSS, and JavaScript files to implement the UI using Bootstrap components.
 Use Bootstrap's grid system for layout structuring and responsiveness.
 Incorporate CSS styles for enhanced visual aesthetics and consistency.
+![bootstrap_ferrai](https://github.com/DK08464/bootstrap_ferrari/assets/121443975/8ad97135-5cf5-4c16-b55d-4a0b87ada5df)
