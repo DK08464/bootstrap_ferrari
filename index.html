@@ -25,16 +25,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#headingOne">Powertrain</a>
+                    <a class="nav-link" href="#headingOne" onclick="expandAccordion('collapseOne')">Powertrain</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#headingTwo">Performance</a>
+                    <a class="nav-link" href="#headingTwo" onclick="expandAccordion('collapseTwo')">Performance</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#headingThree">Weight</a>
+                    <a class="nav-link" href="#headingThree" onclick="expandAccordion('collapseThree')">Weight</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#headingFour">Transmission and Gearbox</a>
+                    <a class="nav-link" href="#headingFour" onclick="expandAccordion('collapseFour')">Transmission and Gearbox</a>
                 </li>
 
             </ul>
@@ -51,15 +51,15 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://www.topgear.com/sites/default/files/2022/11/Ferrari_Vision_GT_02.jpg"
-                    class="d-block w-100" alt="...">
+                    class="d-block w-100" alt="VisionGT1">
             </div>
             <div class="carousel-item">
                 <img src="https://cdn.ferrari.com/cms/network/media/img/resize/6380cf2694471c00229eb69b-ferrari_vision_gt_news-l?"
-                    class="d-block w-100" alt="...">
+                    class="d-block w-100" alt="VisionGT2">
             </div>
             <div class="carousel-item">
                 <img src="https://www.topgear.com/sites/default/files/2022/11/Ferrari_Vision_GT_front_02.jpg"
-                    class="d-block w-100" alt="...">
+                    class="d-block w-100" alt="VisionGT3">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -84,7 +84,7 @@
                 </h5>
             </div>
 
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     Type V6 - 120°, twin turbo, all-wheel drive<br>
                     Total displacement 3000 cc<br>
@@ -152,7 +152,7 @@
         <div class="card bg-success">
             <a href="https://www.ferrari.com/en-EN/auto/sf90-spider">
                 <img src="https://cdn.ferrari.com/cms/network/media/img/resize/649ec877f6396100889d6e16-ferrari-models-menu-2023-cards-sf90-spider?width=1040&height=585"
-                    class="card-img-top" alt="...">
+                    class="card-img-top" alt="SF90">
             </a>
 
             <div class="card-body">
@@ -169,7 +169,7 @@
         <div class="card bg-white">
             <a href="https://www.ferrari.com/en-EN/auto/sf90-xx-spider">
                 <img src="https://cdn.ferrari.com/cms/network/media/img/resize/64a6d22d867a7e002308a92b-ferrari-models-menu-2023-cards-sf90-xx-spider?width=1040&height=585"
-                    class="card-img-top" alt="...">
+                    class="card-img-top" alt="SF90XX">
             </a>
 
             <div class="card-body">
@@ -189,7 +189,7 @@
         <div class="card bg-danger">
             <a href="https://www.ferrari.com/en-EN/auto/ferrari-daytona-sp3">
                 <img src="https://cdn.ferrari.com/cms/network/media/img/resize/649ecafd437d870023cf5351-ferrari-models-menu-2023-cards-ferrari-daytonasp3?width=1040&height=585"
-                    class="card-img-top" alt="...">
+                    class="card-img-top" alt="DAYTONA">
             </a>
             <div class="card-body">
                 <h5 class="card-title">DAYTONA SP3</h5>
@@ -211,13 +211,19 @@
 
     </div>
 
-
-
     <!-- Bootstrap JS and jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function expandAccordion(panelId) {
+            setTimeout(function () {
+                $('#' + panelId).collapse('show');
+            }, 500); 
+        }
+    </script>
+    
 </body>
 
 </html>

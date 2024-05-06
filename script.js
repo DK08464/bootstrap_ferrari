@@ -6,8 +6,6 @@ document.getElementById('websiteButton').addEventListener('click', function() {
     
     window.open('https://www.ferrari.com/en-IN', '_blank');
   });
-  // Smooth scrolling with custom duration
-// Smooth scrolling with custom duration and easing function
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -17,7 +15,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         if (targetElement) {
             const topOffset = targetElement.getBoundingClientRect().top;
-            const scrollDuration = 1000; // Adjust the duration (in milliseconds) as desired
+            const scrollDuration = 1000; 
             const start = window.pageYOffset;
             const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
 
